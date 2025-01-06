@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'PT sans', serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: url('https://images.unsplash.com/photo-1526642738196-ad8ed2d50805?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    color: #916b6b;
+    font-family: 'Poppins';
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.menu-link a {
+    font-size: 20px;
+    color: #754155;
+    letter-spacing: 3px;
+}
+
+.header-info {
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 520px;
+}
+
+.header-info p {
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+.header-info h3 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: lighter;
+}
+
+/* Form Elements */
+.header-btn {
+    margin-top: 1rem;
+}
+
+.header-btn input, .newsletter-title input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 230px;
+    border: none;
+    border-radius: 5px;
+    color: #36887d;
+    margin-bottom: 1rem;
+}
+
+.header-btn input:focus, .newsletter-title input:focus {
+    background-color: #edf6ff;
+    outline: none;
+}
+
+.header-btn button, .newsletter-title button {
+    padding: 0.5rem;
+    width: 150px;
+    background-color: pink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-btn button:hover, .newsletter-title button:hover {
+    background-color: peachpuff;
+}
+
+.header-btn button:active, .newsletter-title button:active {
+    background-color: rgb(226, 192, 162);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+}
+
+.about-div {
+    background-color: #e7e7e7;
+}
+
+.about-title {
+    color: #ad5c8e;
+    padding: 2rem 0;
+    margin-top: 0;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-shadow: #ffffff 1px 2px;
+    font-weight: bolder;
+}
+
+.about-desc {
+    color: #8d8d8d;
+    font-size: clamp(16px, 3vw, 20px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-con {
+    padding: 4rem 2rem;
+}
+
+.about-img {
+    margin: 2rem 0;
+}
+
+/* Pricing Section */
+.pricing {
+    background-color: #bdd7e4;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.pricing-info h3 {
+    font-weight: lighter;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.pricing-info p {
+    margin: 1rem 0;
+}
+
+.pricing-table {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.pricing-box {
+    background-color: #efefef;
+    color: #754155;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.pricing-box-title {
+    background-color: #dfdfdf;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: #ffffff 1px 2px 3px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.pricing-box-info {
+    padding: 1rem;
+}
+
+.pricing-box-info p {
+    margin: 0.5rem 0;
+}
+
+.price-blue {
+    color: #ad5c8e;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.pricing-more-info {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #ffd2d2;
+    padding: 1rem;
+    width: 60%;
+    color: #424242;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.pricing-more-info:hover {
+    background-color: #aee7d9;
+}
+
+.pricing-sha {
+    position: relative;
+    margin: 20px;
+}
+
+.pricing-sha:hover::before {
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-sha::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0);
+    z-index: 1;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Clients Section */
+.clients {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.clients-title h3 {
+    color: #ad5c8e;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.clients-title p {
+    color: #424242;
+    margin: 2.5rem 0;
+}
+
+.clients-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.clients-box p {
+    text-indent: 1.5rem;
+}
+
+.clients-img {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clients-img img {
+    width: 25%;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+.clients-img p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-indent: 0;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: url('https://images.unsplash.com/photo-1544717302-de2939b7ef71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 260px;
+    padding: 2rem 0;
+}
+
+.newsletter-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.newsletter-title h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: lighter;
+    color: #539b9b;
+}
+
+
+/* Footer */
+footer {
+    background-color: #e2bac6;
+    padding: 1rem;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-menu ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    .footer-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-top: 1rem;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header-info {
+        margin-top: 3rem;
+        padding: 0 1rem;
+    }
+
+    .about-con {
+        padding: 2rem 1rem;
+    }
+
+    .pricing-table {
+        grid-template-columns: 1fr;
+    }
+
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-title {
+        padding: 1rem;
+    }
+
+    .newsletter-title form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .owl-carousel {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-btn form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-menu ul {
+        flex-direction: column;
+    }
+
+    .pricing-box {
+        margin: 0 1rem;
+    }
+
+    .clients-img {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clients-img img {
+        width: 50%;
+        margin: 1rem auto;
+    }
+}
+
+/* Owl Carousel Custom Styles */
+.mifcuteslide {
+    margin: 2rem auto;
+    max-width: 100%;
+}
+
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: auto;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-prev {
+    left: -20px;
+}
+
+.owl-next {
+    right: -20px;
+}
+
+
+
+
+/*  */
+
+/* {box-sizing: border-box;} */
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+/* .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+} */
+
+/* The popup form - hidden by default */
+
+/* Backdrop - จะแสดงเมื่อ popup เปิด */
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* สีเทาโปร่งแสง */
+    z-index: 8;
+  }
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border-radius: 10px;
+  transform: translate(-50%, -50%); /* ทำให้อยู่ตรงกลาง */
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+  color: #ad5c8e;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 350px;
+    padding: 20px;
+    /* margin: 2rem 4rem; */
+    background-color: white;
+   
+  }
+
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #eaf7ff;
+}
+
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #e9aac9;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  /* .form-container .btn-cancel{
+    color: rgb(126, 126, 126);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    
+
+  } */
+
+  .form-container .btn-x{
+    color: rgb(255, 133, 180);
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    /* margin-bottom: 20px; */
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+
+    .btn-cancel {
+      color: rgb(126, 126, 126);
+      font-weight: bold;
+    }
+
+  }
+
+  .form-container .btn-cancel:hover{
+    color: red;
+  }
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
