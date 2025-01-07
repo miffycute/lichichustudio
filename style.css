@@ -21,7 +21,7 @@ body {
 /* Header */
 header {
     background: url('https://images.unsplash.com/photo-1526642738196-ad8ed2d50805?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    height: 100vh;
+    height: 60vh;
     min-height: 600px;
     background-size: cover;
     background-position: center;
@@ -51,7 +51,7 @@ nav a {
 .header-info {
     margin-top: 5rem;
     width: 100%;
-    max-width: 520px;
+    max-width: 400px;
 }
 
 .header-info p {
@@ -487,29 +487,48 @@ footer {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); /* สีเทาโปร่งแสง */
     z-index: 8;
+
   }
 
 .form-popup {
-  display: none;
+  display:none;
   position: fixed;
   top: 50%;
   left: 50%;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   transform: translate(-50%, -50%); /* ทำให้อยู่ตรงกลาง */
   border: 3px solid #f1f1f1;
   z-index: 9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
   color: #ad5c8e;
+  width: 500px;
 }
+
+/* #myFormlogin {
+
+    width: 500px;
+
+
+} */
+
+
+
+/* .form-popup-width {
+    width: 500px;
+} */
 
 /* Add styles to the form container */
 .form-container {
-    max-width: 350px;
+    max-width: 500px;
     padding: 20px;
     /* margin: 2rem 4rem; */
     background-color: white;
    
+  }
+
+  #myFormlogin{
+    padding: 0 2rem;
   }
 
 
@@ -519,17 +538,36 @@ footer {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #eaf7ff;
+  background: #effaff;
 }
 
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
+    background-color: #e7e7e7;
     outline: none;
+    
   }
   
 
+  .btn-s {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn-s:hover {
+    opacity: 0.8;
+  }
+  
+  .form-container input[type=text] {
+    margin-bottom: 0.5rem;
+
+}
+
+  .form-container input[type=password] {
+    padding-right: 40px;
+    margin-bottom: 0.5rem;
+  }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
@@ -557,7 +595,7 @@ footer {
 
   .form-container .btn-x{
     color: rgb(255, 133, 180);
-    padding: 5px 5px;
+    padding: 5px 0px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -568,8 +606,13 @@ footer {
 
     .btn-cancel {
       color: rgb(126, 126, 126);
-      font-weight: bold;
+      /* font-weight: bold; */
     }
+
+  }
+
+  .form-container .btn-x h1{
+    text-spacing-trim: 0.5rem;
 
   }
 
@@ -586,3 +629,76 @@ footer {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+.password-container {
+    margin-bottom: 8px;
+  }
+  
+  .password-input-container {
+    position: relative;
+    width: 100%;
+  }
+  
+
+  .password-input-container input {
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 15px; /* เพิ่ม padding ให้เท่ากันทุกด้าน */
+    padding-right: 40px; /* เพิ่ม padding ด้านขวาให้มีที่ว่างสำหรับ icon */
+  }
+  
+  .btn-s {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 2.5px); /* ปรับตำแหน่งให้อยู่กึ่งกลางโดยคำนึงถึง margin-top ของ input */
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .toggle-icon {
+    font-size: 18px;
+    color: #754155;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .btn-s:hover {
+    opacity: 0.8;
+  }
+
+
+
+  .subsignin {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0rem;
+    text-decoration: none;
+    color: #ad5c8e;
+
+  }
+
+
+    .subsignin:hover {
+        color: #754155;
+    }
+
+    .subsignin a {
+        text-decoration: none;
+        color: #ad5c8e;
+    }
